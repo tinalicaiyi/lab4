@@ -4,7 +4,8 @@
  */
 
 exports.view = function(req, res){
-  res.render('index', {
-  	'name': '',
+  var Caiyi = req.params.userNamer;
+  res.render('hello', {
+  	"name": Caiyi,
   });
 };
